@@ -1,0 +1,15 @@
+Список текущих перенаправлений по доменам
+cat /opt/etc/dnsmasq.d/kvas.dnsmasq
+kvas show
+
+Узнать ip адреса домена
+dig myip2.ru
+
+Список всех ip адресов которые перенаправляются
+ipset list unblock
+
+Добавить домен в список перенаправления
+kvas add rutracker.org
+
+Добавить домен в список перенаправления из файла
+cd /tmp && curl -O https://raw.githubusercontent.com/Xamelion45/FreeResources/main/inside-kvas.lst && kvas import inside-kvas.lst
