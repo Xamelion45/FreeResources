@@ -11,5 +11,8 @@ ipset list unblock
 Добавить домен в список перенаправления
 kvas add rutracker.org
 
-Добавить домен в список перенаправления из файла
+Добавить домен в список перенаправления из файла (inside)
 cd /tmp && curl -O https://raw.githubusercontent.com/Xamelion45/FreeResources/main/inside-kvas.lst && kvas import inside-kvas.lst
+
+Добавить домен в список перенаправления из файла (outside)
+cd /tmp && curl -O https://raw.githubusercontent.com/Xamelion45/FreeResources/main/outside-kvas.lst && kvas import outside-kvas.lst
